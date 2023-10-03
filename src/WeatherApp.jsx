@@ -8,7 +8,7 @@ export const WeatherApp = () => {
     <div className="container">
       <h1>Aplicación Clima</h1>
       <form onSubmit={handleSubmit}>
-        <input type="text" value={ciudad} onChange={handleCambioCiudad} />
+        <input type="text" value={ciudad} onChange={handleCambioCiudad} placeholder="Busca tu ciudad" />
         <button type="submit">Buscar</button>
       </form>
       {dataClima && (
