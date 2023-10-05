@@ -2,7 +2,7 @@ import {useState} from "react";
 
 export const useGetWeather = () => {
   const urlBase = "https://api.openweathermap.org/data/2.5/weather";
-  const API_KEY = "2c443b466eedd0426d81d1fc922839bd";
+  const API_KEY = import.meta.env.VITE_APIKEY;
 
   const [ciudad, setCiudad] = useState("");
 
